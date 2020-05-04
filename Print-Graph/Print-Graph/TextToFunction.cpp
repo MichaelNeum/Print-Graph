@@ -7,14 +7,15 @@ void TextToFunction::SetFunction(string Function)
 
 int TextToFunction::_powerCalculator(int number, int power)
 {
+	int returnnumber = number;
 	for (int i = power; i > 1; i--)
 	{
-		number *= number;
+		returnnumber *= number;
 	}
-	return number;
+	return returnnumber;
 }
 
-void TextToFunction::_setParameter()
+void TextToFunction::SetParameter()
 {
 	string numberString = "";
 	string powerString = "";
@@ -78,6 +79,5 @@ void TextToFunction::_setParameter()
 
 int TextToFunction::FunctionValue(int x)
 {
-	_setParameter();
 	return this->_a * this->_powerCalculator(x, 4) + this->_b * this->_powerCalculator(x, 3) + this->_c * this->_powerCalculator(x, 2) + this->_d * x + this->_e;
 }

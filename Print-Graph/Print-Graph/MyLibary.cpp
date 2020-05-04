@@ -6,7 +6,7 @@ void GraphDrawer::DrawGraph(string function)
 {
 	TextToFunction TTF;
 	TTF.SetFunction(function);
-
+	TTF.SetParameter();
 	std::array<int, GraphWidth> ySorted;
 	std::array<int, GraphWidth> y;
 	for (int i = 0; i < GraphWidth; i++)
