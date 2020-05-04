@@ -1,13 +1,12 @@
-#include <iostream>
-#include <array>
-#include <algorithm>
+
+#include "TextToFunction.h"
 
 using namespace std;
 
 class GraphDrawer
 {
 	public:
-		void DrawGraph(int k, int d);
+		void DrawGraph(string function);
 };
 
 class StringChecks
@@ -18,6 +17,6 @@ class StringChecks
 
 namespace Constants
 {
-	constexpr int GraphWidth = 101;
+	constexpr int GraphWidth = 21;
 }
 

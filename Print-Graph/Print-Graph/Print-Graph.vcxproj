@@ -149,12 +149,14 @@
   <ItemGroup>
     <ClCompile Include="MyLibary.cpp" />
     <ClCompile Include="Print-Graph.cpp" />
+    <ClCompile Include="TextToFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="MyLibary.h" />
     <ClInclude Include="MyNamespaces.h" />
     <ClInclude Include="Names.h" />
+    <ClInclude Include="TextToFunction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,14 +2,17 @@
 
 using namespace Constants;
 
-void GraphDrawer::DrawGraph(int k, int d)
+void GraphDrawer::DrawGraph(string function)
 {
+	TextToFunction TTF;
+	TTF.SetFunction(function);
+
 	std::array<int, GraphWidth> ySorted;
 	std::array<int, GraphWidth> y;
 	for (int i = 0; i < GraphWidth; i++)
 	{
-		ySorted.at(i) = k * i + d;
-		y.at(i) = k * i + d;
+		ySorted.at(i) = TTF.FunctionValue(i);
+		y.at(i) = TTF.FunctionValue(i);
 	}
 	std::sort(ySorted.rbegin(), ySorted.rend());
 	for (int i = ySorted.at(0); i > -1; i--)
